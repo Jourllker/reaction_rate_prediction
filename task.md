@@ -13,13 +13,13 @@
 可以使用开源反应数据，若使用了开源反应数据，需要在代码审核阶段提供数据来源以及相关说明。
 
 ### 初赛
-初赛数据集仅包含碳氮成键类型反应数据，其中训练集中包含23538条反应数据，测试集中包含2616条反应数据。训练集与测试集的比例接近9：1。每条训练数据包含 rxnid, Reactant1, Reactant2 , Product , Additive , Solvent , Yield 字段。其中 Reactant1 , Reactant2 , Product , Additive , Solvent 字段中为对应物质的==SMILES==字符串，Yield字段为目标字段，是经过归一化的浮点数。
+初赛数据集仅包含碳氮成键类型反应数据，其中==训练集中包含23538条==反应数据，==测试集中包含2616条==反应数据。训练集与测试集的比例接近==9：1==。每条训练数据包含 ==rxnid, Reactant1, Reactant2 , Product , Additive , Solvent , Yield== 字段。其中 Reactant1 , Reactant2 , Product , Additive , Solvent 字段中为对应物质的 ==SMILE== 字符串，Yield字段为目标字段，是经过归一化的浮点数。
 
 ## 评价指标
 实验真实结果与预测结果$R^2$决定系数来进行评测:
-![alt text](img/image.png)
+![alt text](img/task/image.png)
 
-## 提交的结果文件
+## 提交的结果文件（submit.txt）
 rxnid,Yield
 test1,0.5555
 test2,0.6666
